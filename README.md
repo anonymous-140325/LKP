@@ -1,4 +1,4 @@
-# sepsis_lkp_combined.py
+# sepsis_lkp.py
 
 LKP (Latent Knowledge Programming) pipeline for early sepsis detection on
 the PhysioNet/CinC 2019 Sepsis Challenge dataset. Runs the balanced case
@@ -64,13 +64,8 @@ to a small latent `z`, with a `DecisionTree` teacher fit on `z`).
 ## Usage
 
 ```bash
-python sepsis_lkp_combined.py --data Dataset.csv
+python sepsis_lkp.py --data Dataset.csv
 ```
-
-Two fixed constants near the top of the file set the seed for each pass —
-`SEED_BALANCED` and `SEED_UNBALANCED` — not CLI flags; edit them directly
-and rerun to reproduce a different seed. Reported at `SEED_BALANCED=6`
-and `SEED_UNBALANCED=17`.
 
 Optional flags: `--models` (comma-separated subset or `all`),
 `--max-patients` (subsample for a quick smoke test), `--out-dir` (where
