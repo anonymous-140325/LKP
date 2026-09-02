@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+.env/
+*.egg-info/
+knowledge_object_*.json
+multi_seed_results.json
+.DS_Store
+Dataset.csv
+*.csv
