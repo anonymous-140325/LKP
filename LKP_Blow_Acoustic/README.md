@@ -13,8 +13,8 @@ Then, run the following command to train the model using the dataset:
 ## Evaluation
 
 To evaluate the model's accuracy and runtime performance, first specify the following parameters in the `main.py` file:
--  MODEL_TYPE = # Specify the same model type used during training.
--  THRESHOLD_MODE = # Choose either "GLOBAL" or "PER-USER".
+-  MODEL_TYPE = "" # Specify the same model type used during training.
+-  THRESHOLD_MODE = "" # Choose either "GLOBAL" or "PER-USER".
 
 Then, run the following command to perform the evaluation:
 - `python main.py`
